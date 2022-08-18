@@ -1,0 +1,22 @@
+.book-list__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-list__item img {
+  width: 128px;
+  height: 189px;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+  background: #eee;
+}
+
+.book-list__item span {
+  margin-top: 15px;
+}
+
+.book-list__title {
+  font-weight: bold;
+}
+.book-list__author {
+  color: #999;
+}

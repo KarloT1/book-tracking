@@ -1,26 +1,14 @@
 import React, { Component} from 'react';
-import './App.css';
+import './app.css';
+import BookList from './components/bookList';
+import SearchField from './components/searchField';
 
 class App extends Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-
-    }
-  }
-  componentDidMount() {
-    fetch("http://localhost:3000/books", {
-      "Content-Type": "application/json"
-    })
-    .then(res => res.json())
-    .then(data => console.log(data))
-  }
-
   render() {
     return (
-      <div className="App">
-        
+      <div className="main">
+        <SearchField />
+        <BookList />
       </div>
     );
   }
