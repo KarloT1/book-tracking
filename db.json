@@ -1,0 +1,109 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Midnight's Children",
+      "author": "Salman Rushdie",
+      "cover": "./src/assets/images/midnights-children.jpeg",
+      "year": 1981
+    },
+    {
+      "id": 2,
+      "title": "Magic Burns",
+      "author": "Ilona Andrews",
+      "cover": "./src/assets/images/magic-burns.jpeg",
+      "year": 2008
+    },
+    {
+      "id": 3,
+      "title": "Burn",
+      "author": "Maya Banks",
+      "cover": "./src/assets/images/burn.jpeg",
+      "year": 2013
+    },
+    {
+      "id": 4,
+      "title": "Be with Me",
+      "author": "J. Lynn, Jennifer L. Armentrout",
+      "cover": "./src/assets/images/be-with-me.jpeg",
+      "year": 2014
+    },
+    {
+      "id": 5,
+      "title": "Cross Justice",
+      "author": "James Patterson",
+      "cover": "./src/assets/images/cross-justice.jpeg",
+      "year": 2015
+    },
+    {
+      "id": 6,
+      "title": "Relentless",
+      "author": "Dean Koontz",
+      "cover": "./src/assets/images/relentless.jpeg",
+      "year": 2009
+    },
+    {
+      "id": 7,
+      "title": "P.S. I Still Love You",
+      "author": "Jenny Han",
+      "cover": "./src/assets/images/ps-i-still-love-you.jpeg",
+      "year": 2015
+    },
+    {
+      "id": 8,
+      "title": "Black Ice",
+      "author": "Becca Fitzpatric",
+      "cover": "./src/assets/images/black-ice.jpeg",
+      "year": 2014
+    },
+    {
+      "id": 9,
+      "title": "Mastiff",
+      "author": "Tamora Pierce",
+      "cover": "./src/assets/images/mastiff.jpeg",
+      "year": 2011
+    },
+    {
+      "id": 10,
+      "title": "61 Hours",
+      "author": "Lee Child",
+      "cover": "./src/assets/images/61-hours.jpeg",
+      "year": 2010
+    },
+    {
+      "id": 11,
+      "title": "Succubus Heat",
+      "author": "Richelle Mead",
+      "cover": "./src/assets/images/succubus-heat.jpeg",
+      "year": 2009
+    },
+    {
+      "id": 12,
+      "title": "To Say Nothing of the Dog",
+      "author": "Connie Willis",
+      "cover": "./src/assets/images/to-say-nothing-of-the-dog.jpeg",
+      "year": 1998
+    },
+    {
+      "id": 13,
+      "title": "Detroit: An American Autopsy",
+      "author": "Charlie LeDuff",
+      "cover": "./src/assets/images/detroit-an-american-autopsy.jpeg",
+      "year": 2013
+    },
+    {
+      "id": 14,
+      "title": "The Complete Stories",
+      "author": "Flannery O'Connor",
+      "cover": "./src/assets/images/the-complete-stories.jpeg",
+      "year": 1971
+    },
+    {
+      "id": 15,
+      "title": "The Secret Garden",
+      "author": "Frances Hodgson Burnett",
+      "cover": "./src/assets/images/the-secret-garden.jpeg",
+      "year": 1911
+    }
+  ]
+}
