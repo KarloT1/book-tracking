@@ -26,7 +26,7 @@ class SearchField extends Component {
           type="text" 
           onChange={this.handleChange} 
           value={this.state.value} 
-          placeholder="Search by Author or Book"
+          placeholder="Search by Author or Book name"
         />
       </div>
     )

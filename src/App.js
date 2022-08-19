@@ -1,28 +1,26 @@
 import React, { Component} from 'react';
 import './app.css';
 import BookList from './components/bookList';
-import SearchField from './components/searchField';
+import { Route, Link, Routes } from 'react-router-dom';
+import FavoritesList from './components/favoritesList';
 
 class App extends Component {
-  constructor(props) {
-    super(props)
-  
-    this.state = {
-      value: ""
-    }
-
-    this.handleChange = this.handleChange.bind(this)
-  }
-
-  handleChange(value) {
-    this.setState({ value })
-  }
   render() {
     return (
-      <div className="main">
-        <SearchField handleChange={this.handleChange} />
-        <BookList value={this.state.value} />
-      </div>
+      <React.Fragment>
+        <div className="main">
+          <ul className="navbar-nav mr-auto">
+            <li><Link to={'/'} className="nav-link">Home</Link></li>
+            <li><Link to={'/favorites'} className="nav-link">Favorites</Link></li>
+          </ul>
+          <div className="main__content">
+            <Routes>
+              <Route exact path='/' element={<BookList />} />
+              <Route path='/favorites' element={<FavoritesList />} />
+            </Routes>
+          </div>
+        </div>
+      </React.Fragment>
     );
   }
 }
