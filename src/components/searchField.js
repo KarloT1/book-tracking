@@ -14,6 +14,8 @@ class SearchField extends Component {
   handleChange(e) {
     this.setState({
       value: e.target.value
+    }, () => {
+      this.props.handleChange(this.state.value)
     })
   }
 

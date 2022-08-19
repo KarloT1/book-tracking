@@ -16,6 +16,14 @@ constructor(props) {
     })
   }
 
+  componentDidUpdate(prevProps) {
+    if (prevProps.value !== this.props.value) {
+      booksAPI.searchBooks(this.props.value).then(books => {
+        this.setState({ books })
+      })
+    }
+  }
+
   render() {
     return (
       <ul className="book-list">
