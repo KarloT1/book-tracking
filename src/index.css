@@ -6,3 +6,7 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+
+:root {
+  --primary: #41B3A3
+}

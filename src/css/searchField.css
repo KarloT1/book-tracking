@@ -6,4 +6,12 @@
   width: 100%;
   padding: 20px;
   font-size: 1.3rem;
+  outline: none;
+  border: 2px solid var(--primary);
+  border-radius: 8px;
 }
+
+.search-field__wrapper input:focus {
+  box-shadow: 0 0 3px var(--primary);
+}
+

@@ -1,11 +1,16 @@
 @import './css/bookList.css';
 @import './css/bookListItem.css';
 @import './css/searchField.css';
+@import './css/navbar.css';
+
+.main {
+
+}
 
 .main__content {
   padding: 60px 120px;
   background-color: #ffffff;
-  background-image:  radial-gradient(#69a4eb 0.45px, transparent 0.45px), radial-gradient(#69a4eb 0.45px, #ffffff 0.45px);
+  background-image:  radial-gradient(var(--primary) 0.45px, transparent 0.45px), radial-gradient(var(--primary) 0.45px, #ffffff 0.45px);
   background-size: 18px 18px;
   background-position: 0 0,9px 9px;
 }

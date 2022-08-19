@@ -3,6 +3,10 @@
   flex-direction: column;
 }
 
+.book-list__item:hover img {
+  box-shadow: 0 3px 6px var(--primary), 0 3px 6px var(--primary);
+}
+
 .book-list__item img {
   width: 128px;
   height: 189px;

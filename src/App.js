@@ -1,18 +1,16 @@
 import React, { Component} from 'react';
 import './app.css';
 import BookList from './components/bookList';
-import { Route, Link, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import FavoritesList from './components/favoritesList';
+import Navbar from './components/navbar';
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
         <div className="main">
-          <ul className="navbar-nav mr-auto">
-            <li><Link to={'/'} className="nav-link">Home</Link></li>
-            <li><Link to={'/favorites'} className="nav-link">Favorites</Link></li>
-          </ul>
+          <Navbar />
           <div className="main__content">
             <Routes>
               <Route exact path='/' element={<BookList />} />
