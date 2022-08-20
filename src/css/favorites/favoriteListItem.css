@@ -38,6 +38,10 @@
   font-size: 1.2rem;
 }
 
+.favorite-list__badge.favorite {
+  color: red
+}
+
 .favorite-list__badge:hover {
   color: red;
   cursor: pointer;

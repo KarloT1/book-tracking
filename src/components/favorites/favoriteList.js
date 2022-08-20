@@ -47,6 +47,7 @@ class FavoritesList extends Component {
                 bookYear={favorite.year}
                 bookId={favorite.id}
                 removeFavorite={this.removeFavorite}
+                isFavorite={favorite.isFavorite}
               />
             </li>
           ))}

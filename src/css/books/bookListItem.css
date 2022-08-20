@@ -38,6 +38,10 @@
   font-size: 1.2rem;
 }
 
+.book-list__badge.favorite {
+  color: red;
+}
+
 .book-list__badge:hover {
   color: red;
   cursor: pointer;

@@ -37,3 +37,12 @@ export const removeFavorite = (bookId) =>
     }
   })
   .then(res => res.json())
+
+export const updateBook = (bookId, body) =>
+  fetch(`${books}/${bookId}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: body
+  })

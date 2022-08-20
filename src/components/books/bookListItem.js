@@ -22,20 +22,27 @@ class BookListItem extends Component {
       "title": bookTitle,
       "author": bookAuthor,
       "cover": bookCover,
-      "year": bookYear
+      "year": bookYear,
+      "isFavorite": true
     })
 
-    booksAPI.addFavorite(body)
+    booksAPI.addFavorite(body);
+    booksAPI.updateBook(bookId, body);
   }
 
   render() {
-    const { bookCover, bookTitle, bookAuthor } = this.props;
+    const { bookCover, bookTitle, bookAuthor, isFavorite } = this.props;
     return (
       <div className="book-list__item">
         <img src={bookCover} alt={`${bookTitle} cover.`} />
         <span className="book-list__title">{bookTitle}</span>
         <span className="book-list__author">{bookAuthor}</span>
-        <div className="book-list__badge" onClick={this.addFavorite}>
+        <div 
+          className={`book-list__badge 
+            ${isFavorite ? "favorite" : ""}
+          `} 
+          onClick={this.addFavorite}
+        >
           <FontAwesomeIcon icon={faHeart} />
         </div>
       </div>
