@@ -15,9 +15,10 @@ class BookListItem extends Component {
   }
 
   addFavorite() {
-    const { bookCover, bookTitle, bookAuthor, bookYear } = this.props;
+    const { bookCover, bookTitle, bookAuthor, bookYear, bookId } = this.props;
 
     const body = JSON.stringify({
+      "id": bookId,
       "title": bookTitle,
       "author": bookAuthor,
       "cover": bookCover,
@@ -28,7 +29,7 @@ class BookListItem extends Component {
   }
 
   render() {
-    const { bookCover, bookTitle, bookAuthor } = this.props;
+    const { bookCover, bookTitle, bookAuthor, bookId } = this.props;
     return (
       <div className="book-list__item">
         <img src={bookCover} alt={`${bookTitle} cover.`} />

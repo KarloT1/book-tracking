@@ -46,6 +46,7 @@ constructor(props) {
                 bookTitle={book.title}
                 bookAuthor={book.author}
                 bookYear={book.year}
+                bookId={book.id}
               />
             </li>
           ))}
