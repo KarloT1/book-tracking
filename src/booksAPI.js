@@ -28,3 +28,12 @@ export const addFavorite = (body) =>
     body: body
   })
   .then(res => res.json())
+
+export const removeFavorite = (bookId) => 
+  fetch(`${favorites}/${bookId}`, {
+    method: "DELETE",
+    headers: {
+      "Content-Type": "application/json"
+    }
+  })
+  .then(res => res.json())

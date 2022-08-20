@@ -106,20 +106,5 @@
       "year": 2016
     }
   ],
-  "favorites": [
-    {
-      "id": 1,
-      "title": "Ramona the Brave",
-      "author": "Beverly Cleary, Alan Tiegreen",
-      "cover": "https://images.gr-assets.com/books/1408925322m/91248.jpg",
-      "year": 1975
-    },
-    {
-      "id": 6,
-      "title": "14th Deadly Sin",
-      "author": "James Patterson, Maxine Paetro",
-      "cover": "https://images.gr-assets.com/books/1425682789m/23346918.jpg",
-      "year": 2015
-    }
-  ]
+  "favorites": []
 }

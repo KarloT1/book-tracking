@@ -25,11 +25,11 @@ class BookListItem extends Component {
       "year": bookYear
     })
 
-    booksAPI.addFavorite(body).then(data => console.log(data))
+    booksAPI.addFavorite(body)
   }
 
   render() {
-    const { bookCover, bookTitle, bookAuthor, bookId } = this.props;
+    const { bookCover, bookTitle, bookAuthor } = this.props;
     return (
       <div className="book-list__item">
         <img src={bookCover} alt={`${bookTitle} cover.`} />

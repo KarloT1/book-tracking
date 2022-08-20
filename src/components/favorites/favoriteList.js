@@ -9,11 +9,25 @@ class FavoritesList extends Component {
     this.state = {
       favorites: []
     }
+
+    this.removeFavorite = this.removeFavorite.bind(this)
   }
 
   componentDidMount() {
     booksAPI.getFavorites().then(favorites => {
       this.setState({ favorites })
+    })
+  }
+
+  removeFavorite(bookId) {
+    this.state.favorites.forEach((favorite, index) => {
+      let favorites = [...this.state.favorites];
+      
+      if (favorites[index].id === bookId) {
+        favorites.splice(index, 1);
+
+        this.setState({ favorites })
+      }
     })
   }
 
@@ -31,6 +45,8 @@ class FavoritesList extends Component {
                 bookTitle={favorite.title}
                 bookAuthor={favorite.author}
                 bookYear={favorite.year}
+                bookId={favorite.id}
+                removeFavorite={this.removeFavorite}
               />
             </li>
           ))}
