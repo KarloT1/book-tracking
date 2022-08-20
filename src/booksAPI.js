@@ -46,3 +46,4 @@ export const updateBook = (bookId, body) =>
     },
     body: body
   })
+  .then(res => res.json())

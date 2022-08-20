@@ -12,6 +12,7 @@ class BookListItem extends Component {
     }
 
     this.addFavorite = this.addFavorite.bind(this)
+    this.removeFavorite = this.removeFavorite.bind(this)
   }
 
   addFavorite() {
@@ -30,6 +31,22 @@ class BookListItem extends Component {
     booksAPI.updateBook(bookId, body);
   }
 
+  removeFavorite() {
+    const { bookCover, bookTitle, bookAuthor, bookYear, bookId } = this.props;
+
+    const body = JSON.stringify({
+      "id": bookId,
+      "title": bookTitle,
+      "author": bookAuthor,
+      "cover": bookCover,
+      "year": bookYear,
+      "isFavorite": false
+    })
+
+    booksAPI.removeFavorite(bookId);
+    booksAPI.updateBook(bookId, body)
+  }
+
   render() {
     const { bookCover, bookTitle, bookAuthor, isFavorite } = this.props;
     return (
@@ -41,7 +58,10 @@ class BookListItem extends Component {
           className={`book-list__badge 
             ${isFavorite ? "favorite" : ""}
           `} 
-          onClick={this.addFavorite}
+          onClick={isFavorite
+            ? this.removeFavorite
+            : this.addFavorite
+          }
         >
           <FontAwesomeIcon icon={faHeart} />
         </div>

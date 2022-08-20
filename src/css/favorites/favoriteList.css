@@ -12,3 +12,11 @@
   padding: 30px;
   margin-bottom: 30px;
 }
+
+.no-favorites {
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 48px;
+  color: var(--primary);
+  padding: 40px;
+}

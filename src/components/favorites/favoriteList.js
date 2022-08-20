@@ -15,6 +15,7 @@ class FavoritesList extends Component {
 
   componentDidMount() {
     booksAPI.getFavorites().then(favorites => {
+      console.log(favorites)
       this.setState({ favorites })
     })
   }
@@ -32,26 +33,35 @@ class FavoritesList extends Component {
   }
 
   render() {
+    const favoritesLength = this.state.favorites.length
+
     return (
       <React.Fragment>
         {/* <SearchField 
           handleChange={this.handleChange} 
         /> */}
-        <ul className="favorite-list">
-          {this.state.favorites.map(favorite => (
-            <li key={favorite.id}>
-              <FavoriteListItem 
-                bookCover={favorite.cover}
-                bookTitle={favorite.title}
-                bookAuthor={favorite.author}
-                bookYear={favorite.year}
-                bookId={favorite.id}
-                removeFavorite={this.removeFavorite}
-                isFavorite={favorite.isFavorite}
-              />
-            </li>
-          ))}
-        </ul>
+        {
+          !favoritesLength
+          ? <div className="no-favorites">
+              There are no books on your Favorites list. <br/>
+              Add some on the Home page and you can view them here.
+            </div>
+          :  <ul className="favorite-list">
+              {this.state.favorites.map(favorite => (
+                <li key={favorite.id}>
+                  <FavoriteListItem 
+                    bookCover={favorite.cover}
+                    bookTitle={favorite.title}
+                    bookAuthor={favorite.author}
+                    bookYear={favorite.year}
+                    bookId={favorite.id}
+                    removeFavorite={this.removeFavorite}
+                    isFavorite={favorite.isFavorite}
+                  />
+                </li>
+              ))}
+            </ul>
+        }
       </React.Fragment>
     )
   }
