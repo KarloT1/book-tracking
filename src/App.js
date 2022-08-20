@@ -1,8 +1,8 @@
 import React, { Component} from 'react';
 import './app.css';
-import BookList from './components/bookList';
+import BookList from './components/books/bookList';
 import { Route, Routes } from 'react-router-dom';
-import FavoritesList from './components/favoritesList';
+import FavoritesList from './components/favorites/favoriteList';
 import Navbar from './components/navbar';
 
 class App extends Component {

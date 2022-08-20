@@ -1,8 +1,32 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import * as booksAPI from '../../booksAPI';
 
 class BookListItem extends Component {
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+      favorites: []
+    }
+
+    this.addFavorite = this.addFavorite.bind(this)
+  }
+
+  addFavorite() {
+    const { bookCover, bookTitle, bookAuthor, bookYear } = this.props;
+
+    const body = JSON.stringify({
+      "title": bookTitle,
+      "author": bookAuthor,
+      "cover": bookCover,
+      "year": bookYear
+    })
+
+    booksAPI.addFavorite(body).then(data => console.log(data))
+  }
+
   render() {
     const { bookCover, bookTitle, bookAuthor } = this.props;
     return (
@@ -10,7 +34,7 @@ class BookListItem extends Component {
         <img src={bookCover} alt={`${bookTitle} cover.`} />
         <span className="book-list__title">{bookTitle}</span>
         <span className="book-list__author">{bookAuthor}</span>
-        <div className="book-list__badge">
+        <div className="book-list__badge" onClick={this.addFavorite}>
           <FontAwesomeIcon icon={faHeart} />
         </div>
       </div>

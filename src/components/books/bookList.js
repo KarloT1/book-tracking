@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import BookListItem from './bookListItem';
-import SearchField from './searchField';
-import * as booksAPI from '../booksAPI';
+import SearchField from '../searchField';
+import * as booksAPI from '../../booksAPI';
 
 class BookList extends Component {
 constructor(props) {
@@ -45,6 +45,7 @@ constructor(props) {
                 bookCover={book.cover}
                 bookTitle={book.title}
                 bookAuthor={book.author}
+                bookYear={book.year}
               />
             </li>
           ))}
