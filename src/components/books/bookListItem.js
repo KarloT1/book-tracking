@@ -28,7 +28,9 @@ class BookListItem extends Component {
     })
 
     booksAPI.addFavorite(body);
-    booksAPI.updateBook(bookId, body);
+    booksAPI.updateBook(bookId, body).then(() => {
+      this.props.fetchBooks();
+    })
   }
 
   removeFavorite() {
@@ -44,7 +46,9 @@ class BookListItem extends Component {
     })
 
     booksAPI.removeFavorite(bookId);
-    booksAPI.updateBook(bookId, body)
+    booksAPI.updateBook(bookId, body).then(() => {
+      this.props.fetchBooks();
+    })
   }
 
   render() {

@@ -15,7 +15,6 @@ class FavoritesList extends Component {
 
   componentDidMount() {
     booksAPI.getFavorites().then(favorites => {
-      console.log(favorites)
       this.setState({ favorites })
     })
   }

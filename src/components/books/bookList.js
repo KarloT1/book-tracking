@@ -13,8 +13,13 @@ constructor(props) {
   }
 
   this.handleChange = this.handleChange.bind(this)
+  this.fetchBooks = this.fetchBooks.bind(this)
 }
   componentDidMount() {
+    this.fetchBooks();
+  }
+
+  fetchBooks() {
     booksAPI.getBooks().then(books => {
       this.setState({ books })
     })
@@ -48,6 +53,7 @@ constructor(props) {
                 bookYear={book.year}
                 bookId={book.id}
                 isFavorite={book.isFavorite}
+                fetchBooks={this.fetchBooks}
               />
             </li>
           ))}
