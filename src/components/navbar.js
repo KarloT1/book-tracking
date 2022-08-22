@@ -11,6 +11,9 @@ export class Navbar extends Component {
         <li className="navbar__item">
           <Link to={'/favorites'}>Favorites</Link>
         </li>
+        <li className="navbar__item">
+          <Link to={'/add-book'}>Add Book</Link>
+        </li>
       </ul>
     )
   }
