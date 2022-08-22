@@ -1,5 +1,5 @@
-const books = "http://localhost:3000/books";
-const favorites = "http://localhost:3000/favorites";
+const books = "http://localhost:8080/books";
+const favorites = "http://localhost:8080/favorites";
 
 export const getBooks = () =>
   fetch(books, {
