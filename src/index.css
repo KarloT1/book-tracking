@@ -8,5 +8,6 @@
 }
 
 :root {
-  --primary: #41B3A3
+  --primary: #41B3A3;
+  --error: #ff434d;
 }

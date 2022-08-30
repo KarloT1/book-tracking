@@ -18,12 +18,19 @@
 }
 
 .add-book__input-wrapper input {
-  padding: 15px 10px;
+  padding: 15px;
   width: 100%;
   font-size: 1rem;
   outline: none;
   border: 2px solid var(--primary);
   border-radius: 4px;
+}
+
+.add-book__input-wrapper input:-webkit-autofill,
+.add-book__input-wrapper input:-webkit-autofill:hover, 
+.add-book__input-wrapper input:-webkit-autofill:focus, 
+.add-book__input-wrapper input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
 .add-book__input-wrapper input:focus {
@@ -33,7 +40,7 @@
 .add-book__input-wrapper label {
   position: absolute;
   top: 16px;
-  left: 10px;
+  left: 16px;
   color: #999;
   transition: 0.5s ease-in-out;
   font-size: 1rem;
@@ -55,10 +62,25 @@
   margin-left: auto;
   text-align: center;
   transition: 0.2s ease-in-out;
+  margin-bottom: 40px;
 }
 
 .add-book__button:hover {
   color: white;
   background-color: var(--primary);
   transition: 0.2s ease-in-out;
+}
+
+.add-book__success {
+  text-align: right;
+  transition: 1s ease-in-out;
+  color: var(--primary);
+  font-size: 1.1rem;
+}
+
+.add-book__error {
+  text-align: right;
+  transition: 1s ease-in-out;
+  color: var(--error);
+  font-size: 1.1rem;
 }

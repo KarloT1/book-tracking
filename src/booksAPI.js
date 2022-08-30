@@ -47,3 +47,12 @@ export const updateBook = (bookId, body) =>
     body: body
   })
   .then(res => res.json())
+
+  export const addBook = (body) =>
+  fetch(`${books}`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: body
+  })
