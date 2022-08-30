@@ -1,3 +1,8 @@
+.add-book__title {
+  margin-bottom: 30px;
+  text-align: right;
+}
+
 .add-book__form {
   display: flex;
   flex-direction: column;
@@ -8,25 +13,52 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
   width: 100%;
 }
 
 .add-book__input-wrapper input {
-  padding: 15px;
+  padding: 15px 10px;
   width: 100%;
-  font-size: 1.3rem;
+  font-size: 1rem;
+  outline: none;
+  border: 2px solid var(--primary);
+  border-radius: 4px;
+}
+
+.add-book__input-wrapper input:focus {
+  box-shadow: 0 0 3px var(--primary);
 }
 
 .add-book__input-wrapper label {
   position: absolute;
-  top: 19px;
-  left: 16px;
+  top: 16px;
+  left: 10px;
   color: #999;
   transition: 0.5s ease-in-out;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .add-book__input-wrapper input:focus ~ label {
   top: -26px;
+}
+
+.add-book__input-wrapper input:not(:placeholder-shown) ~ label {
+  top: -26px;
+}
+
+.add-book__button {
+  padding: 15px 30px;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  width: 25%;
+  margin-left: auto;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+}
+
+.add-book__button:hover {
+  color: white;
+  background-color: var(--primary);
+  transition: 0.2s ease-in-out;
 }
