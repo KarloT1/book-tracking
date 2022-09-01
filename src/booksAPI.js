@@ -48,7 +48,7 @@ export const updateBook = (bookId, body) =>
   })
   .then(res => res.json())
 
-  export const addBook = (body) =>
+export const addBook = (body) =>
   fetch(`${books}`, {
     method: "POST",
     headers: {
@@ -56,3 +56,12 @@ export const updateBook = (bookId, body) =>
     },
     body: body
   })
+
+export const deleteBook = (bookId) => 
+  fetch(`${books}/${bookId}`, {
+    method: "DELETE",
+    headers: {
+      "Content-Type": "application/json"
+    }
+  })
+  .then(res => res.json())

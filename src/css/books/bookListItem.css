@@ -30,12 +30,12 @@
 
 .book-list__heart {
   position: absolute;
-  right: 0;
+  right: 3px;
   top: -10px;
-  padding: 8px;
+  padding: 8px 9px;
   border-radius: 50%;
   background: lightgray;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .book-list__heart.favorite {
@@ -45,4 +45,22 @@
 .book-list__heart:hover {
   color: red;
   cursor: pointer;
+}
+
+/* Trash badge */
+
+.book-list__trash {
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  padding: 8px 10px;
+  border-radius: 50%;
+  background: lightgray;
+  font-size: 1rem;
+}
+
+.book-list__trash:hover {
+  color: lightgray;
+  cursor: pointer;
+  background: #000;
 }

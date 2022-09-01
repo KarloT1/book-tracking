@@ -13,6 +13,7 @@ class BookListItem extends Component {
 
     this.addFavorite = this.addFavorite.bind(this)
     this.removeFavorite = this.removeFavorite.bind(this)
+    this.deleteBook = this.deleteBook.bind(this);
   }
 
   addFavorite() {
@@ -51,6 +52,14 @@ class BookListItem extends Component {
     })
   }
 
+  deleteBook() {
+    const { bookId } = this.props;
+
+    booksAPI.deleteBook(bookId).then(() => {
+      this.props.fetchBooks();
+    })
+  }
+
   render() {
     const { bookCover, bookTitle, bookAuthor, isFavorite } = this.props;
     return (
@@ -68,6 +77,12 @@ class BookListItem extends Component {
           }
         >
           <FontAwesomeIcon icon={faHeart} />
+        </div>
+        <div 
+          className="book-list__trash"
+          onClick={this.deleteBook}
+        >
+          <FontAwesomeIcon icon={faTrashCan} />
         </div>
       </div>
     )
