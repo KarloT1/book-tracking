@@ -28,7 +28,7 @@
 
 /* Favorite badge */
 
-.book-list__badge {
+.book-list__heart {
   position: absolute;
   right: 0;
   top: -10px;
@@ -38,11 +38,11 @@
   font-size: 1.2rem;
 }
 
-.book-list__badge.favorite {
+.book-list__heart.favorite {
   color: red;
 }
 
-.book-list__badge:hover {
+.book-list__heart:hover {
   color: red;
   cursor: pointer;
 }

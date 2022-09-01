@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faHeart, faTrashCan } from '@fortawesome/free-solid-svg-icons';
 import * as booksAPI from '../../booksAPI';
 
 class BookListItem extends Component {
@@ -59,7 +59,7 @@ class BookListItem extends Component {
         <span className="book-list__title">{bookTitle}</span>
         <span className="book-list__author">{bookAuthor}</span>
         <div 
-          className={`book-list__badge 
+          className={`book-list__heart 
             ${isFavorite ? "favorite" : ""}
           `} 
           onClick={isFavorite

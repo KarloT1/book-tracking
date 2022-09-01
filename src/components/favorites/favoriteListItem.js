@@ -39,7 +39,7 @@ export class FavoriteListItem extends Component {
         <span className="favorite-list__title">{bookTitle}</span>
         <span className="favorite-list__author">{bookAuthor}</span>
         <div className={`
-            favorite-list__badge
+            favorite-list__heart
             ${isFavorite ? "favorite": ""}
           `} 
           onClick={this.removeFavorite}

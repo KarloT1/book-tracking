@@ -28,7 +28,7 @@
 
 /* Favorite badge */
 
-.favorite-list__badge {
+.favorite-list__heart {
   position: absolute;
   right: 0;
   top: -10px;
@@ -38,11 +38,11 @@
   font-size: 1.2rem;
 }
 
-.favorite-list__badge.favorite {
+.favorite-list__heart.favorite {
   color: red
 }
 
-.favorite-list__badge:hover {
+.favorite-list__heart:hover {
   color: red;
   cursor: pointer;
 }
