@@ -84,7 +84,7 @@ export class AddBook extends Component {
             />
             <label htmlFor="author">Book Author</label>
           </div>
-          <div className="add-book__input-wrapper">
+          <div className="add-book__input-wrapper add-book__tooltip">
             <input 
               type="text"
               id="cover"
@@ -93,6 +93,7 @@ export class AddBook extends Component {
               name="cover"
               value={this.state.value}
             />
+            <span className="tooltiptext">provide valid image URL</span>
             <label htmlFor="cover">Book Cover</label>
           </div>
           <div className="add-book__input-wrapper">

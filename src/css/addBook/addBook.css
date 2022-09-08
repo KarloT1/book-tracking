@@ -63,6 +63,13 @@
   text-align: center;
   transition: 0.2s ease-in-out;
   margin-bottom: 40px;
+  white-space: nowrap;
+}
+
+@media(max-width: 767px) {
+  .add-book__button {
+    width: 100%;
+  }
 }
 
 .add-book__button:hover {
@@ -83,4 +90,38 @@
   transition: 1s ease-in-out;
   color: var(--error);
   font-size: 1.1rem;
+}
+
+/* TOOLTIP */
+.add-book__tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.add-book__tooltip span {
+  opacity: 0;
+  background-color: rgba(65, 179, 163, 0.5);
+  color: rgb(36, 36, 36);
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px 20px 6px;
+  position: absolute;
+  z-index: 1;
+  top: -35px;
+  right: -70px;
+  transition: 0.5s ease-in-out;
+}
+
+.add-book__tooltip span::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 20px;
+  border: 5px solid;
+  border-color: rgba(65, 179, 163, 0.5) transparent transparent transparent;
+}
+
+.add-book__tooltip input:focus ~ span {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
 }
