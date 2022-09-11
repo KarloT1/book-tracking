@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import * as booksAPI from '../../booksAPI'
+import AddByIsbn from './addByIsbn';
 
 export class AddBook extends Component {
   constructor(props) {
@@ -16,6 +17,7 @@ export class AddBook extends Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.addByIsbn = this.addByIsbn.bind(this);
   }
 
   handleChange(e) {
@@ -57,6 +59,16 @@ export class AddBook extends Component {
     })
   }
 
+  addByIsbn(bookData) {
+    this.setState({
+      title: bookData.title,
+      author: bookData.author,
+      cover: bookData.cover,
+      year: bookData.year,
+      isFavorite: bookData.isFavorite
+    })
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -69,7 +81,7 @@ export class AddBook extends Component {
               onChange={this.handleChange} 
               placeholder=" " 
               name="title"
-              value={this.state.value}
+              value={this.state.title}
             />
             <label htmlFor="title">Book Title</label>
           </div>
@@ -80,7 +92,7 @@ export class AddBook extends Component {
               onChange={this.handleChange}
               placeholder=" "
               name="author"
-              value={this.state.value}
+              value={this.state.author}
             />
             <label htmlFor="author">Book Author</label>
           </div>
@@ -91,7 +103,7 @@ export class AddBook extends Component {
               onChange={this.handleChange}
               placeholder=" "
               name="cover"
-              value={this.state.value}
+              value={this.state.cover}
             />
             <span className="tooltiptext">provide valid image URL</span>
             <label htmlFor="cover">Book Cover</label>
@@ -103,7 +115,7 @@ export class AddBook extends Component {
               onChange={this.handleChange}
               placeholder=" "
               name="year"
-              value={this.state.value}
+              value={this.state.year}
             />
             <label htmlFor="year">Book Year</label>
           </div>
@@ -129,6 +141,8 @@ export class AddBook extends Component {
             </div>
           )
         }
+
+        <AddByIsbn addByIsbn={this.addByIsbn} />
       </React.Fragment>
     )
   }

@@ -72,6 +72,24 @@
   }
 }
 
+@media(max-width: 1000px) {
+  .add-book__button--isbn {
+    width: 30%;
+  }
+}
+
+@media(max-width: 875px) {
+  .add-book__button--isbn {
+    width: 40%;
+  }
+}
+
+@media(max-width: 767px) {
+  .add-book__button--isbn {
+    width: 100%;
+  }
+}
+
 .add-book__button:hover {
   color: white;
   background-color: var(--primary);

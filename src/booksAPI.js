@@ -1,5 +1,6 @@
 const books = "http://localhost:8080/books";
 const favorites = "http://localhost:8080/favorites";
+const bookByIsbn = "https://openlibrary.org/isbn";
 
 export const getBooks = () =>
   fetch(books, {
@@ -65,3 +66,25 @@ export const deleteBook = (bookId) =>
     }
   })
   .then(res => res.json())
+
+export const searchBookByIsbn = (bookIsbn) =>
+  fetch(`${bookByIsbn}/${bookIsbn}.json`, {
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*"
+  })
+  .then(res => res.json())
+
+export const searchAuthorByIsbn = (authorLink) =>
+  fetch(`https://openlibrary.org${authorLink}.json`, {
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*"
+  })
+  .then(res => res.json())
+  
+  export const searchBookCoverByIsbn = (bookIsbn) => {
+  fetch(`https://covers.openlibrary.org/b/isbn/${bookIsbn}-S.jpg`, {
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*"
+  })
+  .then(res => res.json())
+}
