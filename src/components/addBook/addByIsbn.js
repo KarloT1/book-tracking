@@ -33,6 +33,7 @@ class AddByIsbn extends Component {
             author: authorData.name,
             title: data.title,
             year: data.publish_date,
+            cover: `https://covers.openlibrary.org/b/isbn/${this.state.bookIsbn}-M.jpg`,
             isFavorite: false
           }, () => {
             const bookData = {
@@ -40,7 +41,7 @@ class AddByIsbn extends Component {
               "author": this.state.author,
               "year": this.state.year,
               "isFavorite": this.state.isFavorite,
-              "cover": `https://covers.openlibrary.org/b/isbn/${this.state.bookIsbn}-M.jpg`
+              "cover": this.state.cover
             }
 
             this.props.addByIsbn(bookData)
@@ -55,6 +56,7 @@ class AddByIsbn extends Component {
           author: author,
           title: data.title,
           year: data.publish_date,
+          cover: `https://covers.openlibrary.org/b/isbn/${this.state.bookIsbn}-M.jpg`,
           isFavorite: false
          }, () => {
           const bookData = {
@@ -62,7 +64,7 @@ class AddByIsbn extends Component {
             "author": this.state.author,
             "year": this.state.year,
             "isFavorite": this.state.isFavorite,
-            "cover": `https://covers.openlibrary.org/b/isbn/${this.state.bookIsbn}-M.jpg`
+            "cover": this.state.cover
           }
 
           this.props.addByIsbn(bookData)

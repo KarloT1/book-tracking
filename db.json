@@ -127,7 +127,40 @@
       "year": "1999",
       "isFavorite": false,
       "id": 16
+    },
+    {
+      "id": 17,
+      "title": "The Shawshank redemption",
+      "author": "Mark Kermode",
+      "cover": "https://covers.openlibrary.org/b/isbn/0851709680-M.jpg",
+      "year": "2003",
+      "isFavorite": true
+    },
+    {
+      "id": 18,
+      "title": "Harry Potter Coloring Book",
+      "author": "Scholastic",
+      "cover": "https://covers.openlibrary.org/b/isbn/1338029991-M.jpg",
+      "year": "Nov 10, 2015",
+      "isFavorite": true
     }
   ],
-  "favorites": []
+  "favorites": [
+    {
+      "id": 18,
+      "title": "Harry Potter Coloring Book",
+      "author": "Scholastic",
+      "cover": "https://covers.openlibrary.org/b/isbn/1338029991-M.jpg",
+      "year": "Nov 10, 2015",
+      "isFavorite": true
+    },
+    {
+      "id": 17,
+      "title": "The Shawshank redemption",
+      "author": "Mark Kermode",
+      "cover": "https://covers.openlibrary.org/b/isbn/0851709680-M.jpg",
+      "year": "2003",
+      "isFavorite": true
+    }
+  ]
 }

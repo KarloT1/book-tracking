@@ -101,6 +101,7 @@
   transition: 1s ease-in-out;
   color: var(--primary);
   font-size: 1.1rem;
+  margin-bottom: 40px;
 }
 
 .add-book__error {
@@ -108,6 +109,15 @@
   transition: 1s ease-in-out;
   color: var(--error);
   font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.add-book__line {
+  margin-bottom: 30px;
+  height: 2px;
+  border: none;
+  width: 100%;
+  background: var(--primary);
 }
 
 /* TOOLTIP */

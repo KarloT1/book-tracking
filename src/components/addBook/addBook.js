@@ -141,7 +141,7 @@ export class AddBook extends Component {
             </div>
           )
         }
-
+        <hr className="add-book__line" />
         <AddByIsbn addByIsbn={this.addByIsbn} />
       </React.Fragment>
     )

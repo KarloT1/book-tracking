@@ -12,6 +12,10 @@
   font-size: 1.2rem;
 }
 
+.navbar__item--active {
+  color: var(--primary) !important;
+}
+
 .navbar__item:hover a {
   color: var(--primary);
 }
