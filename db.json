@@ -6,7 +6,7 @@
       "author": "Beverly Cleary, Alan Tiegreen",
       "cover": "https://images.gr-assets.com/books/1408925322m/91248.jpg",
       "year": 1975,
-      "isFavorite": false
+      "isFavorite": true
     },
     {
       "id": 2,
@@ -135,31 +135,23 @@
       "cover": "https://covers.openlibrary.org/b/isbn/0851709680-M.jpg",
       "year": "2003",
       "isFavorite": true
-    },
-    {
-      "id": 18,
-      "title": "Harry Potter Coloring Book",
-      "author": "Scholastic",
-      "cover": "https://covers.openlibrary.org/b/isbn/1338029991-M.jpg",
-      "year": "Nov 10, 2015",
-      "isFavorite": true
     }
   ],
   "favorites": [
-    {
-      "id": 18,
-      "title": "Harry Potter Coloring Book",
-      "author": "Scholastic",
-      "cover": "https://covers.openlibrary.org/b/isbn/1338029991-M.jpg",
-      "year": "Nov 10, 2015",
-      "isFavorite": true
-    },
     {
       "id": 17,
       "title": "The Shawshank redemption",
       "author": "Mark Kermode",
       "cover": "https://covers.openlibrary.org/b/isbn/0851709680-M.jpg",
       "year": "2003",
+      "isFavorite": true
+    },
+    {
+      "id": 1,
+      "title": "Ramona the Brave",
+      "author": "Beverly Cleary, Alan Tiegreen",
+      "cover": "https://images.gr-assets.com/books/1408925322m/91248.jpg",
+      "year": 1975,
       "isFavorite": true
     }
   ]

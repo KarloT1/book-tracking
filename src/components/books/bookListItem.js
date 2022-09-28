@@ -57,6 +57,8 @@ class BookListItem extends Component {
 
     booksAPI.deleteBook(bookId).then(() => {
       this.props.fetchBooks();
+    }).then(() => {
+      booksAPI.removeFavorite(bookId)
     })
   }
 
