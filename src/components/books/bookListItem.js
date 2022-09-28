@@ -53,12 +53,14 @@ class BookListItem extends Component {
   }
 
   deleteBook() {
-    const { bookId } = this.props;
+    const { bookId, isFavorite } = this.props;
 
     booksAPI.deleteBook(bookId).then(() => {
       this.props.fetchBooks();
     }).then(() => {
-      booksAPI.removeFavorite(bookId)
+      if (isFavorite) {
+        booksAPI.removeFavorite(bookId)
+      }
     })
   }
 

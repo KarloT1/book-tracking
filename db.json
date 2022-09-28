@@ -6,7 +6,7 @@
       "author": "Beverly Cleary, Alan Tiegreen",
       "cover": "https://images.gr-assets.com/books/1408925322m/91248.jpg",
       "year": 1975,
-      "isFavorite": true
+      "isFavorite": false
     },
     {
       "id": 2,
@@ -121,14 +121,6 @@
       "isFavorite": false
     },
     {
-      "title": "Test 1",
-      "author": "Test 1",
-      "cover": "https://edit.org/photos/images/cat/book-covers-big-2019101610.jpg-1300.jpg",
-      "year": "1999",
-      "isFavorite": false,
-      "id": 16
-    },
-    {
       "id": 17,
       "title": "The Shawshank redemption",
       "author": "Mark Kermode",
@@ -144,14 +136,6 @@
       "author": "Mark Kermode",
       "cover": "https://covers.openlibrary.org/b/isbn/0851709680-M.jpg",
       "year": "2003",
-      "isFavorite": true
-    },
-    {
-      "id": 1,
-      "title": "Ramona the Brave",
-      "author": "Beverly Cleary, Alan Tiegreen",
-      "cover": "https://images.gr-assets.com/books/1408925322m/91248.jpg",
-      "year": 1975,
       "isFavorite": true
     }
   ]
