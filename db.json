@@ -126,17 +126,8 @@
       "author": "Mark Kermode",
       "cover": "https://covers.openlibrary.org/b/isbn/0851709680-M.jpg",
       "year": "2003",
-      "isFavorite": true
+      "isFavorite": false
     }
   ],
-  "favorites": [
-    {
-      "id": 17,
-      "title": "The Shawshank redemption",
-      "author": "Mark Kermode",
-      "cover": "https://covers.openlibrary.org/b/isbn/0851709680-M.jpg",
-      "year": "2003",
-      "isFavorite": true
-    }
-  ]
+  "favorites": []
 }
