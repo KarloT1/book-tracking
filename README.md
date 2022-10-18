@@ -1,10 +1,7 @@
 ## Book Tracking App
 
 This project was made as a part of final assignment for my university bachelor's degree.  
-This is a book tracking app in which user has  
-the ability to add his books to favorites,  
-as well as create new books using custom data  
-or an ISBN-10/ISBN-13 code.
+This is a book tracking app in which user has the ability to add his books to favorites, as well as create new books using custom data or an ISBN-10/ISBN-13 code.
 
 ## To start the project
 
