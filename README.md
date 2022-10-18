@@ -6,16 +6,11 @@ the ability to add his books to favorites,
 as well as create new books using custom data  
 or an ISBN-10/ISBN-13 code.
 
-### Guide to start the project
+## To start the project
 
-In order for this project to work, first run:
-
-#### `json-server --watch db.json --port 8080`
-
-in order for the "database" to work.  
-Then to start the application run:
-
-#### `npm start`
+* install all project dependencies with `npm install`
+* run `json-server --watch db.json --port 8080` in order for the "database" to work
+* start the development server with `npm start`
 
 This runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
