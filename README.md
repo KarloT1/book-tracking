@@ -1,5 +1,6 @@
-## This project was made as a part of final assignment for my university bachelor's degree.
+## Book Tracking App
 
+This project was made as a part of final assignment for my university bachelor's degree.
 This is a book tracking app in which user has 
 the ability to add his books to favorites,
 as well as create new books using custom data
